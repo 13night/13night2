@@ -1,20 +1,20 @@
 ﻿(function() {
     "use strict";
 
-    var AutoWashApp = window.AutoWashApp = { };
+    var KskRealtorApp = window.KskRealtorApp = { };
     
     // Uncomment the line below to disable platform-specific look and feel and to use the Generic theme for all devices
     DevExpress.devices.current({ platform: "generic" });
 
     $(function() {
-        AutoWashApp.app = new DevExpress.framework.html.HtmlApplication(
+        KskRealtorApp.app = new DevExpress.framework.html.HtmlApplication(
 		{
-            namespace: AutoWashApp,
+            namespace: KskRealtorApp,
             navigationType: 'empty',
         });
         
-        AutoWashApp.app.router.register(":view", { view: "home" });
-        AutoWashApp.app.navigate();
+        KskRealtorApp.app.router.register(":view", { view: "home" });
+        KskRealtorApp.app.navigate();
     });
     
 })();
