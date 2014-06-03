@@ -1,0 +1,28 @@
+﻿<!--      ЛОББИ С ЖИЛЫМИ КОМПЛЕКСАМИ      -->
+<script>
+ var go=function() {
+	AutoWashApp.app.navigate('lobby');
+}
+ var map=function() {
+	AutoWashApp.app.navigate('map');
+	startLoading();
+}
+
+</script>
+
+
+<style>
+
+
+</style>
+
+
+<div data-options="dxView : { name: 'home' } " >
+<div style="background:#2d2d2d;" class="home-view"  data-options="dxContent : { targetPlaceholder: 'content' } " >
+       <div><img src="img/oblaka.png" style="width:100%; height:auto; border:0px;" onClick="go();"/></div>
+       <div ><img src="img/bol_med.jpg" style="width:100%; height:auto; border:0px;" /></div>
+       <div ><img src="img/map.jpg" style="width:100%; height:auto; border:0px;" onClick="map();"/></div>
+     <!-- этим дивом прикрываем менюшку =) -->  
+     <div style="width:100%; height:50px;background: black; border:0px; position: fixed; bottom: 0; left: 0; z-index:200;" /></div>
+       </div>
+</div>
